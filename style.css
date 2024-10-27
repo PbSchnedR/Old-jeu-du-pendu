@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    position: relative;
+}
+
+.accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb( 6, 6, 6 );
+    z-index: 1;
+    position: absolute;
+}
+
+button{
+    margin: 50px auto;
+    height: 70px;
+    width: 250px;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    background-color:  #36c15a;
+}
+
+.accueil h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: #36c15a;
+}
+
+input{
+    height: 50px;
+    width: 350px;
+    font-size: 30px;
+}
+
+.jeu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.separate{
+    display: flex;
+    flex-direction: row;
+    padding: 0 300px;
+}
+
+
+.liste{
+    display: flex;
+    flex-direction: column;
+    padding: 30px auto;
+    margin: auto 300px;
+ 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#vrai{
+    font-size: 60px;
+    font-weight: 900;
+    color: darkgreen;
+}
+
+#faux{
+    font-size: 60px;
+    font-weight: 900;
+    color: darkred;
+}
+
+
+#loose{
+    display: none;
+}
+
+#loose h1{
+    color: darkred;
+}
+
+.jeu h1{
+    font-size: 90px;
+    color: magenta;
+    margin-bottom: 80px;
+}
+
+.jeu input {
+    margin-top: 50px;
+}
+
+#win{
+    display: none;
+}
+
+#win h1{
+    color: yellow;
+}
+
+
+
+#aide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    font-size: 80px;
+    background-color: #b5b0b0;
+    width: 25%;
+    border-radius: 7%;
+}
+
+#scores{
+    color: magenta;
+    font-size: 30px;
+    position: relative;
+    top: 15%;
+    right: 30%;
+}
+
+#scorewin{
+    color: antiquewhite;
+}
+
+
+#scoredead{
+    color: antiquewhite;
+}

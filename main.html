@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du pendu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--écran titre-->
+    <div class="accueil" id="accueil">
+        
+        <h1>Jeu du pendu</h1>
+        <!--Bouton et champ pour définir le mot secret-->
+        <input type="text" placeholder="Saisir mot à deviner" id="champ">
+        <button type="submit" id="commencer">Commencer</button>
+
+        <!--Emplacement des scores-->
+        <div id="scores">
+            <h2>Nombre de morts : <span id="scoredead"></span></h2>
+            <h2>Nombre de victoires : <span id="scorewin"></span></h2>
+        </div>
+    </div>
+
+    <!--écran de jeu-->
+    <div class="container" id="screen">
+        <!--emplacement pour saisir une lettre-->
+        <div class="jeu">
+            <input type="text" placeholder="Saisir lettre" id="champ_jeu" maxlength="1">
+            <button type="submit" id="saisir_lettre">saisir</button>
+
+            <!--emplacement pour saisir un mot-->
+            <input type="text" placeholder="Saisir mot secret" id="champ_mot">
+            <button type="submit" id="saisir_mot">Valider</button>
+
+            <!--emplacement du nombre d'erreurs-->
+            <div id="errors">Erreurs <span id="err_num"></span>/11</div> 
+        </div>
+
+            <!--emplacement d'aide du joueur avec l'affichage dans l'ordre des lettres correctes saisies-->
+        <div id="aide"> 
+            
+        </div>
+
+        <!--séparation des bonnes lettres et erreurs-->
+        <div class="separate">
+            <!--affichage des bonnes réponses-->
+            <div class="liste"> 
+                <h1>Bonnes lettres</h1>
+                <div id="vrai">
+
+                </div>
+            </div>
+            <!--affichage des erreurs-->
+            <div class="liste">
+                <h1>Erreurs</h1>
+                <div id="faux">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--écran de mort-->
+    <div class="accueil" id="loose">
+        <h1>Vous êtes mort</h1>
+        <!--bouton rejouer (pour la mort)-->
+        <button type="submit" id="retrydead">Rejouer</button>
+
+    </div>
+
+        <!--écran de victoire-->
+    <div class="accueil" id="win">
+        <h1>Félicitations ! Tu as gagné !</h1>
+        <!--bouton rejouer (pour la victoire)-->
+        <button type="submit" id="retrywin">Rejouer</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
